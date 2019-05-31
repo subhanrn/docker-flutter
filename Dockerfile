@@ -27,6 +27,6 @@ RUN rm flutter.tar.xz
 
 
 RUN flutter upgrade
-RUN flutter doctor --android-licenses
+RUN yes "y" | flutter doctor --android-licenses
 
 WORKDIR /root
