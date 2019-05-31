@@ -4,9 +4,10 @@ ENV ANDROID_HOME="/var/opt/android"
 ENV SDK_TOOLS "3859397"
 ENV PATH="/var/opt/flutter/bin:/var/opt/android/tools:/var/opt/android/tools/bin:/var/opt/android/platform-tools:/var/opt/android/platform-tools/bin:${PATH}"
 
+RUN apt-get update
+RUN apt-get install -y curl git unzip openjdk-8-jdk software-properties-common
 RUN add-apt-repository ppa:openjdk-r/ppa -y
 RUN apt-get update
-RUN apt-get install -y curl git unzip openjdk-8-jdk
 
 WORKDIR /var/opt
 
