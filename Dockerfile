@@ -16,8 +16,8 @@ RUN unzip sdk-tools.zip -d android
 RUN rm sdk-tools.zip
 
 RUN sdkmanager --update
-RUN yes | sdkmanager "build-tools;28.0.3"
-RUN yes | sdkmanager "platforms;android-28"
+RUN yes | sdkmanager "build-tools;26.0.2"
+RUN yes | sdkmanager "platforms;android-26"
 RUN sdkmanager "tools"
 
 
