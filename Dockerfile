@@ -21,7 +21,7 @@ RUN yes | sdkmanager "platforms;android-26"
 RUN sdkmanager "tools"
 
 
-RUN curl -o flutter.tar.xz https://storage.googleapis.com/flutter_infra/releases/stable/linux/flutter_linux_v1.5.4-hotfix.2-stable.tar.xz
+RUN curl -o flutter.tar.xz https://storage.googleapis.com/flutter_infra/releases/stable/linux/flutter_linux_v1.7.8+hotfix.3-stable.tar.xz
 RUN tar xf flutter.tar.xz
 RUN rm flutter.tar.xz
 
